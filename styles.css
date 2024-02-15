@@ -1,0 +1,262 @@
+/* Your existing CSS styles go here */
+
+/* Adjustments for the header layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.name {
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+    color: #b14281;
+    margin: 0; /* Reset margin */
+}
+
+.menu-btn {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+header {
+    background: linear-gradient(to right, #ff6b6b, #ffc107);
+    color: #fff;
+    padding: 10px 20px; /* Adjust padding */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1, header h2 {
+    margin: 0; /* Reset margin */
+}
+
+nav {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Center-align menu items */
+}
+
+nav ul li {
+    display: inline-block; /* Change to inline-block for horizontal layout */
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #333;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* Toggle menu */
+#menu-toggle:checked + .menu-btn + nav {
+    display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    .name {
+        display: none;
+    }
+
+    .menu-btn {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    nav ul {
+        display: none;
+        padding-top: 10px;
+    }
+
+    #menu-toggle:checked + .menu-btn + nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+
+section {
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.education-section, .skills-section, .contact-section , .courses-section, .experience-section , .languages-section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+
+
+.footer {
+    background: linear-gradient(to right, #ff6b6b, #ffc107);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+.education-section {
+    background-color: #e7e7e7; /* Light gray background */
+    padding: 40px 20px;
+    margin-top: 60px; /* Adjust margin-top to position under the navbar */
+}
+
+.education-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Dark gray text color */
+}
+
+.education-item {
+    margin-bottom: 30px;
+}
+
+.education-item h3 {
+    font-size: 20px;
+    color: #555; /* Medium gray text color */
+}
+
+.education-item p {
+    font-size: 18px;
+    color: #777; /* Light gray text color */
+}
+
+
+.courses-section {
+    background-color: #c9edb0; /* Light gray background */
+    padding: 40px 20px;
+}
+
+.courses-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Dark gray text color */
+}
+
+.courses-item {
+    margin-bottom: 30px;
+}
+
+.courses-item h3 {
+    font-size: 20px;
+    color: #555; /* Medium gray text color */
+}
+
+.courses-item p {
+    font-size: 18px;
+    color: #777; /* Light gray text color */
+}
+.experience-section {
+    background-color: #f4e0fa; /* Light blue */
+    padding: 40px 20px;
+}
+
+.experience-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Dark gray text color */
+}
+
+.experience-list {
+    list-style-type: disc; /* Use disc bullets for each skill */
+    padding-left: 20px; /* Add some indentation */
+    margin: 0;
+}
+
+.experience-list li {
+    font-size: 18px;
+    color: #555; /* Medium gray text color */
+}
+
+.skills-section {
+    background-color: #e0f7fa; /* Light blue */
+    padding: 40px 20px;
+}
+
+.skills-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Dark gray text color */
+}
+
+.skills-list {
+    list-style-type: disc; /* Use disc bullets for each skill */
+    padding-left: 20px; /* Add some indentation */
+    margin: 0;
+}
+
+.skills-list li {
+    font-size: 18px;
+    color: #555; /* Medium gray text color */
+}
+
+
+.contact-section {
+    background-color: #ffd180; /* Light orange */
+}
+.contact-content {
+    margin-top: 20px;
+}
+
+.contact-content p {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-content p img {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.languages-section {
+    background-color: #e4d1d1; /* Light blue */
+    padding: 40px 20px;
+}
+
+.language {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    height: 10px;
+    margin-bottom: 5px;
+}
+
+.progress {
+    background-color: #4caf50; /* Green color for progress */
+    border-radius: 5px;
+    height: 100%;
+}
+
